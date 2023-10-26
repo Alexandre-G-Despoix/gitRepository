@@ -23,8 +23,6 @@ echo $nom;
 $fullname= ' '.$prenom.' '.$nom;
 echo $fullname;
 
-// Les super globales
-
 
 
 ?>
