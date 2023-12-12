@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-bg-nav: #9c36b5;
+    --clr-bg-button: #7048e8;
+    --clr-uknw: #5c7cfa;
+    --clr-txt: #212529;
+    --clr-txt-nav: #dee2e6;
+    --clr-txt-secondary: #f8f9fa;
+
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: var(--clr-bg-nav);
+    text-decoration: underline;
+}
+
+header {
+    background: var(--clr-bg-nav);
+    padding: 0.5rem 0;
+}
+
+header img {
+    max-width: 30px;
+    margin-left: 15px;
+}
+
+header nav .dispNone {
+    display: none;
+}
+
+nav {
+    color: var(--clr-txt-nav);
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #burger {
+    width: 48px;
+}
+
+#menu_content {
+    background-color: var(--clr-bg-nav);
+    position: absolute;
+    top: 3rem;
+    right: 0.5rem;
+    padding: 1rem;
+    z-index: 100;
+}
+
+#menu_content ul {
+    gap: 1rem;
+    list-style: none;
+}
+
+#menu_content ul li {
+    list-style: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+body {
+    background-image: linear-gradient(#48005c, #8300e2, #a269ff);
+}
+
+article {
+    max-width: 800px;
+    margin: 10px 50px 20px;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 1px solid #ccc;
+    background-color: var(--clr-txt-secondary);
+}
+
+main .personne p {
+    text-align: left;
+}
+
+article .competences p {
+    text-align: center;
+}
+
+footer {
+    background: var(--clr-bg-nav);
+    padding: 0.5rem 0;
+    color: var(--clr-txt-nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-left: 15px;
+}
+
+#btn {
+    margin-right: 15px;
+    background-color: var(--clr-bg-button);
+    border: var(--clr-txt-secondary);
+}
+
+@media (min-width: 480px) {
+
+
+    #menu_burger {
+        display: none;
+    }
+
+    nav {
+        position: inherit;
+    }
+
+    #menu_content {
+        display: flex;
+        position: absolute;
+    }
+
+    #menu_content ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    article {
+        border-radius: 25px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header img {
+        width: 90px;
+    }
+}
